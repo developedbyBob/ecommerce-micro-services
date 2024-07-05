@@ -27,31 +27,3 @@ Usando o Auth Service
 
     `GET /api/auth/profile`
 
-### Exemplo de Requisição
-
-#### Registro de Usuário
-
-`POST /api/auth/register
-Content-Type: application/json
-
-{
-  "name": "John Doe",
-  "email": "johndoe@example.com",
-  "password": "yourpassword"
-}`
-
-#### Login de Usuário
-
-`POST /api/auth/login
-Content-Type: application/json
-
-{
-  "email": "johndoe@example.com",
-  "password": "yourpassword"
-}`
-
-#### Perfil do Usuário (Protegido)
-
-`GET /api/auth/profile
-Content-Type: application/json
-x-auth-token: your_jwt_token`
